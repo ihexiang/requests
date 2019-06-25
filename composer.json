@@ -2,6 +2,7 @@
   "name":             "ihexiang/requests",
   "description":      "PHP Requests 支持 GET、POST、PUT、PATCH、DELETE、HEAD、OPTIONS 等请求",
   "keywords":         ["PHP Requests", "GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
+  "type": "library",
   "time":             "2019-06-25",
   "license":          "Apache-2.0",
   "authors": [{
@@ -10,5 +11,10 @@
   }],
   "require": {
     "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "iHexiang\\Requests\\": "src"
+    }
   }
 }
