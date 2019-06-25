@@ -1,0 +1,14 @@
+{
+  "name":             "ihexiang/requests",
+  "description":      "PHP Requests 支持 GET、POST、PUT、PATCH、DELETE、HEAD、OPTIONS 等请求",
+  "keywords":         ["PHP Requests", "GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
+  "time":             "2019-06-25",
+  "license":          "Apache-2.0",
+  "authors": [{
+    "name":         "he xiang",
+    "email":        "ihexiang@163.com"
+  }],
+  "require": {
+    "php": ">=5.4.0"
+  }
+}
