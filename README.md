@@ -15,7 +15,7 @@ PHP Requests 支持 GET、POST、PUT、PATCH、DELETE、HEAD、OPTIONS 等方法
 
 
 #### 安装
-composer require ihexiang/requests dev-master
+composer require ihexiang/requests v1.0.0
 
 
 #### 支持的方法
