@@ -21,13 +21,13 @@ composer require ihexiang/requests v1.0.0
 
 #### 支持的方法
     
-- GET &nbsp;&nbsp;[示例](./tests/get.php)
-- POST &nbsp;&nbsp;[示例](./tests/post.php)
-- PUT &nbsp;&nbsp;[示例](./tests/put.php)
-- PATCH &nbsp;&nbsp;[示例](./tests/patch.php)
-- DELETE &nbsp;&nbsp;[示例](./tests/delete.php)
-- HEAD &nbsp;&nbsp;[示例](./tests/head.php)
-- OPTIONS &nbsp;&nbsp;[示例](./tests/options.php)
+- GET &nbsp;&nbsp;[示例](./example/get.php)
+- POST &nbsp;&nbsp;[示例](./example/post.php)
+- PUT &nbsp;&nbsp;[示例](./example/put.php)
+- PATCH &nbsp;&nbsp;[示例](./example/patch.php)
+- DELETE &nbsp;&nbsp;[示例](./example/delete.php)
+- HEAD &nbsp;&nbsp;[示例](./example/head.php)
+- OPTIONS &nbsp;&nbsp;[示例](./example/options.php)
 
 #### 响应 Response
 
