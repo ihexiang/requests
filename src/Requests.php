@@ -1,7 +1,13 @@
 <?php
+/**
+ * Requests
+ *
+ * @author      he xiang <ihexiang@163.com>
+ * @version     1.0.0
+ */
+
 namespace iHexiang\Requests;
 
-use iHexiang\Requests\Response;
 
 class Requests
 {
@@ -254,9 +260,11 @@ class Requests
      * */
     protected static function parse_options($ch,$options = []){
 
-        //设置超时时间
+        //设置超时时间 默认十秒
         if(!empty($options['timeout'])){
             curl_setopt($ch, CURLOPT_TIMEOUT, $options['timeout']);
+        }else{
+            curl_setopt($ch, CURLOPT_TIMEOUT, 10);
         }
 
         //auth

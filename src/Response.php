@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Response
+ *
+ * @author      he xiang <ihexiang@163.com>
+ * @version     1.0.0
+ */
 
 namespace iHexiang\Requests;
 
@@ -19,6 +24,11 @@ class Response
     function __construct()
     {
 
+    }
+
+    function __toString()
+    {
+        return $this->body;
     }
 
 
