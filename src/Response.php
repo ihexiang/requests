@@ -38,9 +38,9 @@ class Response
     }
 
 
-    public function toArray($type)
+    public function toArray($dataType)
     {
-        switch ($type){
+        switch ($dataType){
             case 'json':
                 try{
                     return json_decode($this->body,true);
