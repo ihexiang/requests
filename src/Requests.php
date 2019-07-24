@@ -312,14 +312,21 @@ class Requests
         //处理文件上传
         if(is_array($data) && (!empty($data))){
             foreach ($data as $key=>$val){
-                if(stripos($val,'@') === 0){
-                    if(version_compare(PHP_VERSION,'5.5.0', '>=')){
-                        $data[$key] = new \CURLFile(realpath(trim($val,'@')));
-                    }else{
-                        $data[$key] = '@'.realpath($val);
+                if(is_string($val)){
+                    if(stripos($val,'@') === 0){
+                        if(version_compare(PHP_VERSION,'5.5.0', '>=')){
+                            $data[$key] = new \CURLFile(realpath(trim($val,'@')));
+                        }else{
+                            $data[$key] = '@'.realpath($val);
+                        }
                     }
+                }else{
+                    $data[$key] = $val;
                 }
+
             }
+
+            $data = http_build_query($data);
         }
 
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
